@@ -16,30 +16,30 @@ export const projects = [
     "githubUrl": "",
     "quickStats": [
       {
-        "label": "Sure",
+        "label": "TimeLine",
         "value": "6 weeks"
       },
       {
-        "label": "Sonuc",
-        "value": "Bitti"
+        "label": "Outcome",
+        "value": "Delivered on time"
       },
       {
-        "label": "Ana teknoloji",
+        "label": "Core tech",
         "value": "Flutter"
       },
       {
-        "label": "Kaynak",
+        "label": "Source",
         "value": "Upwork"
       }
     ],
     "problem": {
       "tag": "01",
-      "title": "",
-      "narrative": "",
+      "title": "Sosyal iletişim platformu için modüler ve sezgisel bir mobil deneyim gerekiyordu",
+      "narrative": "Politika, oy verme ve anket gibi farklı özellikleri tek bir akıcı uygulamada birleştirmek karmaşık bir mimari gerektirdi",
       "points": [
-        "",
-        "",
-        ""
+        "Farklı kullanıcı modülleri arasında geçiş tutarsız ve karmaşıktı",
+        "Anket ve oy sistemi gerçek zamanlı veri güncellemeleri gerektiriyordu",
+        "The client said: \"We needed one clean app where users could share opinions, vote, and engage — without getting lost.\""
       ]
     },
     "process": {
@@ -53,18 +53,33 @@ export const projects = [
         "Dağıtım"
       ]
     },
-    "tools": [],
+    "tools": [
+      "Claude",
+      "Figma"
+    ],
     "solution": {
       "tag": "03",
-      "title": "",
-      "points": []
+      "title": "A unified social app connecting political engagement with community interaction.",
+      "points": [
+        "Poll, vote, and opinion features were merged into one cohesive flow.",
+        "Real-time sync kept political content up to date across all users.",
+        "Clean navigation made the app accessible to users of all technical levels."
+      ]
     },
     "results": {
       "tag": "04",
-      "title": "",
-      "points": []
+      "title": "A functional social platform delivered on time with full feature coverage.",
+      "points": [
+        "All three core modules were integrated into a single smooth experience",
+        "Client approved the final build without revision requests",
+        "The app was ready for deployment at the end of the 6-week timeline"
+      ]
     },
-    "learnings": [],
+    "learnings": [
+      "Modular state management is essential for multi-feature social apps.",
+      "Real-time features need early architectural decisions.",
+      "Simple navigation always beats complex feature hierarchies."
+    ],
     "stack": {
       "design": [
         "Figma"
@@ -91,30 +106,30 @@ export const projects = [
     "githubUrl": "",
     "quickStats": [
       {
-        "label": "Sure",
-        "value": "12 Ay"
+        "label": "TimeLine",
+        "value": "12 months"
       },
       {
-        "label": "Sonuc",
-        "value": "Bitti"
+        "label": "Outcome",
+        "value": "2 platforms built"
       },
       {
-        "label": "Ana teknoloji",
+        "label": "Core tech",
         "value": "React"
       },
       {
-        "label": "Kaynak",
-        "value": "Okul"
+        "label": "Source",
+        "value": "University"
       }
     ],
     "problem": {
       "tag": "01",
-      "title": "",
+      "title": "Üniversitenin dijital varlığı hem web hem mobil olmak üzere yeniden yapılandırılması gerekiyordu",
       "narrative": "Tasarımı modern olmayan ve ux karmaşası olan web sitesi",
       "points": [
         "Okulun mobil uygulamasının olmaması",
-        "Web Sitesinin dinamik sürdürülebilir bir altyapısı olmaması",
-        ""
+        "Web sitesinin dinamik ve sürdürülebilir bir altyapısı olmaması",
+        "The department said: \"Students needed a modern digital experience on both web and mobile to access campus resources efficiently.\""
       ]
     },
     "process": {
@@ -129,19 +144,31 @@ export const projects = [
       ]
     },
     "tools": [
-      "Cloude"
+      "Claude"
     ],
     "solution": {
       "tag": "03",
-      "title": "",
-      "points": []
+      "title": "A modern university web platform and a first-ever campus mobile app.",
+      "points": [
+        "The web platform was rebuilt with a dynamic, maintainable architecture.",
+        "A brand-new mobile app brought campus resources to students' fingertips.",
+        "The team coordinated roles and responsibilities across a 12-month academic sprint."
+      ]
     },
     "results": {
       "tag": "04",
-      "title": "",
-      "points": []
+      "title": "Two fully delivered digital products for the university, built as a team.",
+      "points": [
+        "The web platform was modernized with consistent UX and a fresh design",
+        "The mobile app filled a long-standing gap in the student experience",
+        "The project was completed across a 12-month development cycle"
+      ]
     },
-    "learnings": [],
+    "learnings": [
+      "Team coordination across roles requires clear scope boundaries from day one.",
+      "University systems have complex content structures that need modular design.",
+      "A 12-month timeline needs regular milestone reviews to stay on track."
+    ],
     "stack": {
       "design": [
         "Figma",
@@ -149,8 +176,9 @@ export const projects = [
       ],
       "development": [
         "React",
-        "pyhtonüKotlin",
-        "Css"
+        "Python",
+        "Kotlin",
+        "CSS"
       ]
     }
   },
@@ -171,19 +199,19 @@ export const projects = [
     "githubUrl": "",
     "quickStats": [
       {
-        "label": "Sure",
-        "value": "6 Weeks"
+        "label": "TimeLine",
+        "value": "6 weeks"
       },
       {
-        "label": "Sonuc",
-        "value": "Bitti"
+        "label": "Outcome",
+        "value": "Full system rebuild"
       },
       {
-        "label": "Ana teknoloji",
-        "value": "Flutter "
+        "label": "Core tech",
+        "value": "Flutter"
       },
       {
-        "label": "Kaynak",
+        "label": "Source",
         "value": "Upwork"
       }
     ],
@@ -194,7 +222,7 @@ export const projects = [
       "points": [
         "Tasarımı Figma üzerinden baştan yapıp, admin paneli ve flutter ile geliştirdim",
         "Müşteri gereksinimleri dorğultusunda anlık bağlanma,çark sistemi, ödül ekleme çıkarma gibi özelliklerle dinamik hale getirdim",
-        ""
+        "The client said: \"The previous developer left everything broken — we needed a full rebuild from the ground up.\""
       ]
     },
     "process": {
@@ -209,23 +237,35 @@ export const projects = [
       ]
     },
     "tools": [
-      "Cloude"
+      "Claude"
     ],
     "solution": {
       "tag": "03",
-      "title": "",
-      "points": []
+      "title": "A complete system rebuild — new design, new backend, new Flutter app.",
+      "points": [
+        "The entire Figma design was redone from scratch to match the client's brand.",
+        "A real-time reward system, spin wheel, and admin panel were built in Flutter.",
+        "The backend was restructured to support scalable, dynamic loyalty features."
+      ]
     },
     "results": {
       "tag": "04",
-      "title": "",
-      "points": []
+      "title": "A fully functional loyalty platform rebuilt and delivered in 6 weeks.",
+      "points": [
+        "The previous broken system was replaced with a stable, modern app",
+        "All requested features including real-time sync and spin rewards were implemented",
+        "The client successfully launched the updated product to restaurant partners"
+      ]
     },
-    "learnings": [],
+    "learnings": [
+      "Inheriting broken code is often faster to rebuild than repair if the scope allows.",
+      "Real-time features like spinning rewards need careful state and sync management.",
+      "Always define the full scope with the client before touching any existing code."
+    ],
     "stack": {
       "design": [
         "Figma",
-        "talwind"
+        "Tailwind"
       ],
       "development": [
         "Flutter",
@@ -251,29 +291,29 @@ export const projects = [
     "githubUrl": "https://github.com/Kaandemirrs/VintageApp",
     "quickStats": [
       {
-        "label": "Sure",
-        "value": "1 hafta"
+        "label": "TimeLine",
+        "value": "1 week"
       },
       {
-        "label": "Sonuc",
-        "value": "Bitti"
+        "label": "Outcome",
+        "value": "+300 downloads"
       },
       {
-        "label": "Ana teknoloji",
+        "label": "Core tech",
         "value": "Flutter"
       },
       {
-        "label": "Kaynak",
-        "value": "Kendi Projem"
+        "label": "Source",
+        "value": "Own product"
       }
     ],
     "problem": {
       "tag": "01",
-      "title": "",
+      "title": "Eski fotoğrafları yapay zeka ile canlandıran, hızlı ve minimal bir mobil deneyim",
       "narrative": "Son teknoloji olan yapay zekaların fotoğraf düzeltme yetkinliğini sezip bende eski fotoğrafları revize eden uygulama geliştirdim",
       "points": [
-        "",
-        "",
+        "Fotoğraf işleme sürecinin kullanıcıya hızlı ve sorunsuz görünmesi gerekiyordu",
+        "Yapay zeka API entegrasyonu mobilde stabil ve hızlı çalışmak zorundaydı",
         ""
       ]
     },
@@ -289,21 +329,33 @@ export const projects = [
       ]
     },
     "tools": [
-      "Cloude",
-      "revunecat",
-      "supabase"
+      "Claude",
+      "RevenueCat",
+      "Supabase"
     ],
     "solution": {
       "tag": "03",
-      "title": "",
-      "points": []
+      "title": "A one-tap AI photo restoration app built for speed and simplicity.",
+      "points": [
+        "Users could restore old photos in seconds with a single tap.",
+        "The AI integration was wrapped in a clean, minimal interface.",
+        "Revenue and subscription flows were handled through RevenueCat."
+      ]
     },
     "results": {
       "tag": "04",
-      "title": "",
-      "points": []
+      "title": "A self-built app on the App Store with over 300 organic downloads.",
+      "points": [
+        "+300 downloads achieved within weeks of launch",
+        "The app maintained a strong rating on the App Store",
+        "The entire product — from idea to ship — was completed in one week"
+      ]
     },
-    "learnings": [],
+    "learnings": [
+      "AI features need tight UX wrapping to feel seamless to non-technical users.",
+      "A fast build is possible with the right tools and a focused feature set.",
+      "Revenue integration should be planned from day one, not added later."
+    ],
     "stack": {
       "design": [
         "Figma"
@@ -330,19 +382,19 @@ export const projects = [
     "githubUrl": "",
     "quickStats": [
       {
-        "label": "Sure",
-        "value": "6 Hafta"
+        "label": "TimeLine",
+        "value": "6 weeks"
       },
       {
-        "label": "Sonuc",
-        "value": "%100 Bitti"
+        "label": "Outcome",
+        "value": "+120 screens"
       },
       {
-        "label": "Ana teknoloji",
+        "label": "Core tech",
         "value": "Figma"
       },
       {
-        "label": "Kaynak",
+        "label": "Source",
         "value": "Harvard Innovation Labs"
       }
     ],
@@ -351,9 +403,9 @@ export const projects = [
       "title": "8 modullü büyük karmaşık projeyi parçalara ayırarak tasarımını yapmak",
       "narrative": "Kafada ve dağınık dokumanlarla belirlenmiş karışık bir projeydi.",
       "points": [
-        "",
-        "",
-        ""
+        "Farklı modüller arasındaki iş akışlarının tutarsız ve belgesiz olması",
+        "Hem web hem mobil olmak üzere 7 aşamada paralel tasarım yapılması gerekiyordu",
+        "The project lead said: \"We had the vision but needed a designer who could structure and deliver it across 8 complex modules.\""
       ]
     },
     "process": {
@@ -368,19 +420,31 @@ export const projects = [
       ]
     },
     "tools": [
-      "Cloude"
+      "Claude"
     ],
     "solution": {
       "tag": "03",
-      "title": "",
-      "points": []
+      "title": "A modular design system built to scale across 8 product modules.",
+      "points": [
+        "Business analysis was conducted first to clarify all workflows before design began.",
+        "A unified design system was established to maintain consistency across all modules.",
+        "Both web and mobile flows were designed in parallel across 7 structured phases."
+      ]
     },
     "results": {
       "tag": "04",
-      "title": "",
-      "points": []
+      "title": "Over 120 screens delivered for a Harvard-backed real estate SaaS.",
+      "points": [
+        "+120 high-fidelity screens delivered across web and mobile",
+        "All 8 modules were documented and structured with consistent UX patterns",
+        "The client at Harvard Innovation Labs approved the final design system"
+      ]
     },
-    "learnings": [],
+    "learnings": [
+      "Business analysis before design prevents costly structural rework.",
+      "Complex multi-module products need a shared design system from the start.",
+      "Phased delivery builds client trust better than delivering everything at once."
+    ],
     "stack": {
       "design": [
         "Figma",
@@ -770,8 +834,7 @@ export const projects = [
       ]
     }
   }
-]
-
+];
 export const skills = [
   {
     group: 'design',
