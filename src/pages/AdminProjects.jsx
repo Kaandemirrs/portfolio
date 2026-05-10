@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useMemo, useState } from 'react'
-import { FiArrowLeft, FiPlus, FiSave, FiTrash2 } from 'react-icons/fi'
+import { FiArrowLeft, FiDownload, FiPlus, FiSave, FiTrash2 } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
 import {
   createEmptyProject,
@@ -91,6 +91,17 @@ export default function AdminProjects() {
 
     setSavedMessage('Projeler kaydedildi.')
     window.setTimeout(() => setSavedMessage(''), 2200)
+  }
+
+  function handleExport() {
+    const json = JSON.stringify(projects, null, 2)
+    const blob = new Blob([json], { type: 'application/json' })
+    const url = URL.createObjectURL(blob)
+    const a = document.createElement('a')
+    a.href = url
+    a.download = 'portfolio-projects.json'
+    a.click()
+    URL.revokeObjectURL(url)
   }
 
   function handleAddProject() {
@@ -224,6 +235,14 @@ export default function AdminProjects() {
               <FiArrowLeft className="h-4 w-4" aria-hidden="true" />
               Siteye don
             </Link>
+            <button
+              type="button"
+              onClick={handleExport}
+              className="inline-flex items-center gap-2 rounded-full border border-white/10 px-5 py-3 text-[13px] font-semibold text-white/76 transition-transform duration-300 hover:scale-[1.02] hover:text-white"
+            >
+              <FiDownload className="h-4 w-4" aria-hidden="true" />
+              Disa aktar
+            </button>
             <button
               type="button"
               onClick={handleSave}

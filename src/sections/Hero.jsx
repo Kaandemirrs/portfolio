@@ -2,7 +2,7 @@ import heroImage from '@/assets/images/headerfoto.jpg'
 import heroMobileImage from '@/assets/images/headermobile.jpg'
 import { useTranslation } from 'react-i18next'
 
-export default function Hero() {
+export default function Hero({ onSplineLoad }) {
   const { t } = useTranslation()
 
   return (
@@ -28,32 +28,9 @@ export default function Hero() {
             className="pointer-events-auto block h-full w-full border-0 bg-transparent"
             loading="lazy"
             allowFullScreen
+            onLoad={onSplineLoad}
           />
         </div>
-      </div>
-
-      <div className="pointer-events-none absolute bottom-[36vh] left-[7%] z-30 flex justify-center sm:hidden">
-        <a
-          href="#works"
-          className="pointer-events-auto inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-5 py-3 text-[12px] font-semibold text-white shadow-[0_12px_40px_rgba(0,0,0,0.28)] backdrop-blur-xl transition-transform duration-300 hover:scale-[1.02]"
-        >
-          {t('hero.viewProjects')}
-          <span aria-hidden="true" className="text-sm leading-none text-white/80">
-            {'->'}
-          </span>
-        </a>
-      </div>
-
-      <div className="pointer-events-none absolute bottom-[24vh] left-[8%] z-30 hidden sm:flex md:bottom-[23vh] md:left-[10%] lg:bottom-[22vh] lg:left-[11%] xl:left-[12%]">
-        <a
-          href="#works"
-          className="pointer-events-auto inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-6 py-3 text-[13px] font-semibold text-white shadow-[0_16px_48px_rgba(0,0,0,0.3)] backdrop-blur-xl transition-transform duration-300 hover:scale-[1.02]"
-        >
-          {t('hero.viewProjects')}
-          <span aria-hidden="true" className="text-sm leading-none text-white/80">
-            {'->'}
-          </span>
-        </a>
       </div>
 
       <div className="relative z-10 flex min-h-screen w-full flex-col">

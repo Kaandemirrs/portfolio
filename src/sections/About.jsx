@@ -50,8 +50,8 @@ export default function About() {
         <div className="mx-auto mt-9 h-px w-full max-w-[1120px] bg-black/12 sm:mt-12" />
 
         <div className="relative mt-10 lg:mt-16">
-          <div className="relative -mx-4 overflow-x-auto px-4 sm:mx-0 sm:px-0">
-            <div className="mx-auto w-max min-w-[980px] max-w-none sm:w-full sm:min-w-0 sm:max-w-[1240px] lg:ml-0 lg:max-w-[1120px]">
+          <div className="relative">
+            <div className="mx-auto w-full max-w-none sm:max-w-[1240px] lg:ml-0 lg:max-w-[1120px]">
               <img
                 src={merdivenGraphic}
                 alt="About me timeline"
@@ -60,7 +60,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="mt-8 grid gap-4 sm:mt-10 sm:gap-5 md:grid-cols-2 lg:absolute lg:right-[1.5%] lg:top-[38%] lg:mt-0 lg:w-[42%] lg:gap-6">
+          <div className="mt-6 grid gap-4 sm:mt-10 sm:gap-5 md:grid-cols-2 lg:absolute lg:right-[1.5%] lg:top-[38%] lg:mt-0 lg:w-[42%] lg:gap-6">
             {aboutItems.map((item, index) => {
               const Icon = item.icon
 

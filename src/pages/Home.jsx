@@ -12,15 +12,53 @@ import { hasAdminAccess, syncAdminAccessFromSearch } from '@/lib/projectStorage'
 export default function Home() {
   const location = useLocation()
   const [showAdminButton, setShowAdminButton] = useState(() => hasAdminAccess())
+  const [splineLoaded, setSplineLoaded] = useState(false)
+  const [loaderVisible, setLoaderVisible] = useState(true)
+  const [barFull, setBarFull] = useState(false)
 
   useEffect(() => {
     setShowAdminButton(syncAdminAccessFromSearch(location.search))
   }, [location.search])
 
+  useEffect(() => {
+    const fallback = setTimeout(() => {
+      setSplineLoaded(true)
+    }, 5000)
+    return () => clearTimeout(fallback)
+  }, [])
+
+  useEffect(() => {
+    if (!splineLoaded) return
+    setBarFull(true)
+    const hideTimer = setTimeout(() => setLoaderVisible(false), 700)
+    return () => clearTimeout(hideTimer)
+  }, [splineLoaded])
+
   return (
     <main className="font-gilroy">
+      {loaderVisible && (
+        <div
+          className={`fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-[#0A0A0A] transition-opacity duration-700 ${
+            barFull ? 'opacity-0 pointer-events-none' : 'opacity-100'
+          }`}
+        >
+          <p className="font-gilroy text-[11px] font-semibold uppercase tracking-[0.55em] text-white/40">
+            Portfolio
+          </p>
+          <p className="mt-3 font-gilroy text-3xl font-extrabold uppercase tracking-[0.18em] text-white/90 sm:text-4xl">
+            Kaan Demir
+          </p>
+          <div className="mt-8 h-px w-52 overflow-hidden bg-white/10">
+            <div
+              className={`h-full bg-white/70 transition-all duration-500 ${
+                barFull ? 'w-full' : 'animate-load-bar'
+              }`}
+            />
+          </div>
+        </div>
+      )}
       <Navbar />
-      <Hero />
+      <Hero onSplineLoad={() => setSplineLoaded(true)} />
       <Skills />
       <Works />
       <About />
