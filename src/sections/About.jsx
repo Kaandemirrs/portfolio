@@ -51,10 +51,12 @@ export default function About() {
 
         <div className="relative mt-10 lg:mt-16">
           <div className="relative">
-            <div className="mx-auto w-full max-w-none sm:max-w-[1240px] lg:ml-0 lg:max-w-[1120px]">
+            <div className="mx-auto w-full max-w-[980px] sm:max-w-[1120px]">
               <img
                 src={merdivenGraphic}
                 alt="About me timeline"
+                loading="lazy"
+                decoding="async"
                 className="h-auto w-full select-none object-contain"
               />
             </div>

@@ -87,15 +87,27 @@ export default function Works() {
             <Link key={project.id} to={`/works/${project.id}`} className="group block">
               <article>
                 <div className="aspect-[1.36/1] overflow-hidden rounded-[28px] bg-neutral-200 shadow-[0_18px_40px_rgba(0,0,0,0.06)] transition-transform duration-300 group-hover:-translate-y-1">
-                  {project.coverImage ? (
+                  {(() => {
+                    const coverImage = project.coverImage || ''
+                    const isLargeDataImage =
+                      typeof coverImage === 'string' &&
+                      coverImage.startsWith('data:image') &&
+                      coverImage.length > 250000
+
+                    if (!coverImage || isLargeDataImage) {
+                      return renderProjectPreview(project.previewVariant)
+                    }
+
+                    return (
                     <img
-                      src={project.coverImage}
+                      src={coverImage}
                       alt={project.title}
+                      loading="lazy"
+                      decoding="async"
                       className="h-full w-full object-cover"
                     />
-                  ) : (
-                    renderProjectPreview(project.previewVariant)
-                  )}
+                    )
+                  })()}
                 </div>
 
                 <div className="mt-4 flex items-center gap-3 text-black">

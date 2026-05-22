@@ -289,6 +289,8 @@ export default function CaseStudy() {
                 <img
                   src={project.coverImage}
                   alt={project.title}
+                  loading="lazy"
+                  decoding="async"
                   className="h-full w-full object-cover"
                 />
               ) : (
